@@ -12,7 +12,7 @@
 }
 
 :root {
-    --background-color: linear-gradient(90deg, rgba(0,11,24,1) 0%, rgba(0,23,45,1) 58%, rgba(0,38,77,1) 100%);;
+    --background-color: linear-gradient(90deg, rgba(0,11,24,1) 0%, rgba(0,23,45,1) 58%, rgba(0,38,77,1) 100%);
     --second--background-color: linear-gradient(90deg, rgba(0,23,45,1) 0%, rgba(0,38,77,1) 58%, rgba(2,56,110,1) 100%);
     --text-color: #fff;
     --main-color: #C3e3eb;
@@ -81,10 +81,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
-.hero--image {
-    width: 35vw;
+.hero--image img{
+    width: 40vw;
 }
 
 .hero--content h3{
@@ -379,4 +380,114 @@ span {
 .footer--topIcon a i {
     font-size: 2.4rem;
     color: var(--text-color);
+}
+
+/* Media queries*/
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        pad: 10rem 3% 2rem;
+    }
+
+    .skills {
+        padding: 5rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+    
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 720px) {
+    #icon-menu {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--background-color);
+        border-top: .1rem solid var(--second--background-color);
+        box-shadow: 0 .5rem 1rem var(--second--background-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #home {
+        flex-direction: column;
+        margin-top: 20%;
+    }
+
+    .hero--content h3{
+        font-size: 2.6rem;
+    }
+
+    .hero--content h1{
+        font-size: 5rem;
+    }
+
+    .hero--image img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .skills h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio--container {
+        flex-wrap: wrap;
+    }
+
+    .portfolio--card {
+        flex-basis: calc(50% - 2.5rem); /* 2 columns with gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio--container {
+        flex-wrap: wrap;
+    }
+
+    .portfolio--card {
+        flex-basis: calc(100% - 2.5rem); /* 1 columns with gap */
+    }
 }

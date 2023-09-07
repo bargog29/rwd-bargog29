@@ -1,0 +1,23 @@
+{
+  "name": "sitev2-rwd",
+  "version": "1.0.0",
+  "description": "Portfolio Site",
+  "dependencies": {
+    "parcel": "^2.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bargog29/rwd-bargog29.git"
+  },
+  "author": "George - Marius Baranga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bargog29/rwd-bargog29/issues"
+  },
+  "homepage": "https://github.com/bargog29/rwd-bargog29#readme"
+}
