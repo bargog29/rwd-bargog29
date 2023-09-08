@@ -45,7 +45,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1.6rem 8%;
     background: var(--background-color);
     display: flex;
     justify-content: space-between;
@@ -53,11 +53,15 @@ section {
     z-index: 100;
 } 
 
-.logo{
+/* .logo{
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
+} */
+
+.logo img{
+    width: 5vw;
 }
 
 .navbar a {
