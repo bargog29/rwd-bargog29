@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bargii || PortfolioRWD</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <!-- Favicon -->
+
     <!-- Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Box icons -->
@@ -20,6 +24,7 @@
 <body>
     <!-- Header -->
     <header class="header">
+
         <!-- Logo -->
         <a href="#" class="logo">Portfolio</a>
         <!-- Logo -->
@@ -42,10 +47,8 @@
             <h3>Hello, It's Me</h3>
             <h1>Bargii</h1>
             <h3>And I'm a <span class="multiple--text"></span></h3>
-            <p>Quis quis id ad quis culpa magna occaecat sint in ullamco id minim. Aliqua amet commodo irure enim ex magna aliqua. 
-                Do reprehenderit dolore ullamco fugiat aliquip in eu tempor tempor est adipisicing consectetur aliqua do. 
-                Veniam labore id laborum enim minim fugiat consequat commodo eiusmod officia. 
-                Duis excepteur labore fugiat duis ullamco fugiat ullamco nulla qui.</p>
+            <p>With a passion for crafting seamless digital experiences, I aim to bridge the gap between creativity and technology. 
+                Let's create something extraordinary together.</p>
             <div class="social--media">
                 <a href="https://www.facebook.com/profile.php?id=100090370907195"><i class='bx bxl-facebook' ></i></a>
                 <a href="https://www.instagram.com/bargiiiiii/?hl=ro"><i class='bx bxl-instagram-alt' ></i></a>
@@ -63,15 +66,36 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="about--image">
-            <img src="/img/hero.png" alt="hero.png">
+            <img src="/img/hero1.png" alt="hero.png">
         </div>
         <div class="about--content">
            <h2 class="heading">About <span>Me</span></h2>
            <h3>Frontend Developer</h3>
-           <p>Minim ea officia veniam excepteur ad nisi duis adipisicing sunt id non tempor. Anim reprehenderit ullamco esse Lorem dolore aliquip eiusmod Lorem ea voluptate in. Ea esse irure irure sint est cupidatat elit sunt incididunt fugiat aute mollit. Enim voluptate anim voluptate non et.</p> 
-            <a href="#" class="button">Read More</a>
+           <p>Passionate Computer Science Graduate crafting web experiences with a touch of creativity. 
+            Enthusiast about Frontend Development and UI/UX Design, I turn ideas into digital reality</p> 
+            <a href="#about" class="button show-modal">Read More</a>
         </div>
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1>Contact</h1>
+            <p>
+                Phone
+                +40755824572
+                <br>
+                Email
+                baranga.georgemarius@gmail.com
+                <br>
+                Github
+                github.com/bargog29
+                <br>
+                Linkedin
+                inkedin.com/in/baranga-george-marius/
+            </p>
+        </div>
+        <div class="overlay hidden"></div>
     </section>
+
+    
     <!-- About -->
 
     <!-- Skills -->
@@ -120,16 +144,6 @@
         <h2 class="heading">Greatest <span>Projects</span></h2>
 
         <div class="portfolio--container">
-            <!-- Portfolio Card -->
-            <div class="portfolio--card">
-                <img src="img/portfolio1.jpg" alt="ss--project.png">
-                <div class="portfolio--layer">
-                    <h4>Domain</h4>
-                    <p>Tempor aliquip enim consequat ipsum sit aliqua sunt eu labore anim eu adipisicing consequat excepteur.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
             <!-- Portfolio Card -->
             <div class="portfolio--card">
                 <img src="img/portfolio1.jpg" alt="ss--project.png">

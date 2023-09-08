@@ -1,5 +1,38 @@
 'use strict';
+
 document.addEventListener('DOMContentLoaded', function () {
+
+// Modal window ABOUT section
+const aboutSection = document.querySelector('.about');
+const modal = aboutSection.querySelector('.modal');
+const overlay = aboutSection.querySelector('.overlay');
+const btnOpenModal = aboutSection.querySelector('.show-modal');
+const btnCloseModal = aboutSection.querySelector('.close-modal');
+
+const closeModal = function() {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+
+btnOpenModal.addEventListener('click', function() {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+    console.log("clicked");
+})
+
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function (exit) {
+    console.log(exit.key);
+    if (exit.key === 'Escape') {
+        if (!modal.classList.contains('hidden')) {
+            modal.classList.add('hidden');
+            overlay.classList.add('hidden');
+        }
+    }
+})
+// Modal window ABOUT section
 
     // Switch to icon-menu <720px
     let iconMenu = document.querySelector('#icon-menu');
@@ -32,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    
     // Function to handle scroll event
     function handleScroll() {
         const sections = document.querySelectorAll('section');
@@ -49,6 +83,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add event listener for scroll
     window.addEventListener('scroll', handleScroll);
 
+    
+
     // Handle initial active item
     setActiveNavItem('home');
 });
+
