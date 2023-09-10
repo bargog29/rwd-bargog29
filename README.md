@@ -26,3 +26,8 @@ Friday, sep. 8, 2023:
 - added new icons
 - added functionality to Read More button in ABOUT section: modal window
 - personal data updated
+
+Sunday, sep. 10, 2023:
+
+- ABOUT section's modal window fixed
+- PORTFOLIO section's project cards fixed
