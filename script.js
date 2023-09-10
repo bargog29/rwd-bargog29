@@ -9,6 +9,7 @@ const overlay = aboutSection.querySelector('.overlay');
 const btnOpenModal = aboutSection.querySelector('.show-modal');
 const btnCloseModal = aboutSection.querySelector('.close-modal');
 
+
 const closeModal = function() {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
