@@ -28,6 +28,16 @@ body{
     color: var(--text-color);
 }
 
+.logo--header{
+    font-size: 2em;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.logo--header span{
+    color: var(--main-color);
+}
+
 /* Section general */
 section {
     min-height: 100vh;
@@ -60,14 +70,14 @@ section {
     cursor: default;
 } */
 
-.logo img{
+/* .logo img{
     width: 5vw;
-}
+} */
 
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    margin: 4rem;
+    margin: 2.8rem;
 }
 
 .navbar a:hover, 
@@ -89,13 +99,38 @@ section {
 }
 
 .hero--image {
-    margin-bottom: 3rem;
-    margin-left: 3rem;
+    margin-bottom: 2.8rem;
+    margin-left: 2.8rem;
+    /* border-bottom: 1.6rem solid var(--main-color);
+    border-radius: 20%; */
 }
 
 .hero--image img{
     width: 40vw;
+    z-index: 100;
 }
+
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* margin-left: 30px; */
+    /* margin-top: 5px; */
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -24px); 
+        
+    }
+    100%   { transform: translate(0, -0px); 
+        /* rotate: 360deg;}    */
+}
+}
+
+
 
 .hero--content h3{
     font-size: 2.8rem;
@@ -132,12 +167,14 @@ span {
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s;
 }
 
 .social--media a:hover {
     background: var(--second--background-color);
     color: var(--second--background-color);
     box-shadow: 0 0 1rem var(--main-color);
+    transform: translateY(-5px);
 }
 
 .button {
@@ -195,7 +232,7 @@ span {
 
 /* SKILLS SECTION */
 .skills h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 3.6rem;
 }
 
 .skills--container {
@@ -203,36 +240,37 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.4rem;
 }
 
 .skills--container .skill--card {
-    flex: 1 1 30rem;
+    flex: 1 1 28rem;
     background: var(--second--background-color);
-    padding: 3rem 2rem 4rem;
+    padding: 2.8rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     /* border: .2rem solid var(--background-color); */
     transition: 0.1s ease-in;
 }
 
+
 .skills--container .skill--card:hover {
     border: .1rem solid var(--main-color);
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
 
 .skill--card i {
-    font-size: 7rem;
+    font-size: 8rem;
     color: var(--main-color);
 }
 
 .skill--card h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .skill--card p {
     font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    margin: 1rem 0 2.8rem;
 }
 
 
@@ -281,7 +319,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), rgba(0,38,77,1));
+    background: linear-gradient(rgba(94, 91, 91, 0.1), rgb(2, 28, 54));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,6 +533,7 @@ span {
 
     .portfolio--card {
         flex-basis: calc(50% - 2.5rem); /* 2 columns with gap */
+        height: 28vh;
     }
 }
 
@@ -505,6 +544,7 @@ span {
 
     .portfolio--card {
         flex-basis: calc(100% - 2.5rem); /* 1 columns with gap */
+        height: 32vh;
     }
 }
 
@@ -533,8 +573,8 @@ span {
     width: 70%;
     height: 50%; 
     margin: 0; 
-    padding: 2rem; 
-    border-radius: 5px;
+    padding: 6rem; 
+    border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.95);
     overflow: auto; 
     z-index: 102;
@@ -542,6 +582,7 @@ span {
 
 .modal p {
     color: black;
+    padding-top: 3px;
 }
 
 .modal h1 {
@@ -559,3 +600,4 @@ span {
     z-index: 101;
 }
   /* Modal window ABOUT section */
+  

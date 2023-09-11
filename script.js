@@ -88,5 +88,38 @@ document.addEventListener('keydown', function (exit) {
 
     // Handle initial active item
     setActiveNavItem('home');
+
+    // Alert form validation
+        const form = document.querySelector("form");
+        const fullNameInput = document.querySelector('input[placeholder="Full Name"]');
+        const emailInput = document.querySelector('input[placeholder="Email Address"]');
+        const messageTextarea = document.querySelector('textarea[placeholder="Your Message"]');
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!fullNameInput.value.trim()) {
+                alert("Please enter your full name.");
+                return;
+            }
+
+            if (!isValidEmail(emailInput.value)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            if (!messageTextarea.value.trim()) {
+                alert("Please enter your message.");
+                return;
+            }
+
+            form.submit();
+        });
+
+        function isValidEmail(email) {
+            const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+            return emailRegex.test(email);
+        }
+        
 });
 

@@ -31,3 +31,10 @@ Sunday, sep. 10, 2023:
 
 - ABOUT section's modal window fixed
 - PORTFOLIO section's project cards fixed
+
+Monday, sep. 11, 2023:
+
+- animation added to hero--image and social-media buttons
+- top-left logo changed
+- responsive skill cards fixed
+- skills and about's modal updated
