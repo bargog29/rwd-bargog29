@@ -38,3 +38,9 @@ Monday, sep. 11, 2023:
 - top-left logo changed
 - responsive skill cards fixed
 - skills and about's modal updated
+
+Tuesday, sep. 12, 2023:
+
+- "Read more" button deleted from skills section because of lack of information
+- intersection observer added to monitor when "section" elements become visible in the viewport
+- lazy loading animation during the user's down scrolling on webpage

@@ -28,6 +28,7 @@ body{
     color: var(--text-color);
 }
 
+
 .logo--header{
     font-size: 2em;
     color: var(--text-color);
@@ -43,7 +44,14 @@ section {
     min-height: 100vh;
     /* padding: .1rem 9% 1rem; */
     padding: 9% 9%;
+    transition: transform 1s, opacity 1s;
 }
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(5rem);
+}
+
 /* Section general */
 
 .hero--section {
@@ -600,4 +608,4 @@ span {
     z-index: 101;
 }
   /* Modal window ABOUT section */
-  
+

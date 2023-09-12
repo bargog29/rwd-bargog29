@@ -89,7 +89,7 @@ document.addEventListener('keydown', function (exit) {
     // Handle initial active item
     setActiveNavItem('home');
 
-    // Alert form validation
+    // Form Validation
         const form = document.querySelector("form");
         const fullNameInput = document.querySelector('input[placeholder="Full Name"]');
         const emailInput = document.querySelector('input[placeholder="Email Address"]');
@@ -120,6 +120,28 @@ document.addEventListener('keydown', function (exit) {
             const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
             return emailRegex.test(email);
         }
-        
+
 });
 
+const allSections = document.querySelectorAll('.section');
+// console.log(allSections);
+const revealSection = function(entries, observer) {
+    const [entry] = entries;
+    // console.log(entry);
+    if(!entry.isIntersecting) return;
+
+    entry.target.classList.remove('section--hidden');
+    observer.unobserve(entry.target);
+}
+
+const sectionObserver = new IntersectionObserver
+(revealSection, {
+    root: null,
+    threshold: 0.20
+});
+allSections.forEach(function(section) {
+    sectionObserver.observe(section);
+    section.classList.add('section--hidden');
+})
+
+// Footer Confetti
